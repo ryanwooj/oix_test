@@ -1,0 +1,116 @@
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalContent {
+  background-color: #fefefe;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  .modalHeader {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .modalBody {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    .shipHeader {
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .shipId {
+        color: rgb(130, 198, 221);
+      }
+      .shipName {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+        font-size: 19px;
+        color: lightcoral;
+      }
+      .shipClass {
+        width: 100%;
+        justify-content: center;
+      }
+      .shipManu {
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+      }
+    }
+    .shipCenter {
+      width: 2%;
+    }
+    .shipBody {
+      width: 49%;
+    }
+  }
+}
+
+.pilots {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px dotted grey;
+  div {
+    margin: 5px;
+    width: 25%;
+    span {
+      color: green;
+    }
+  }
+}
+.endSection {
+  border-bottom: 1px dotted black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 2px 0;
+  .filmId {
+    font-size: 0.7rem;
+  }
+  .filmTitle {
+    font-size: 1.3rem;
+  }
+}

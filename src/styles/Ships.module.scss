@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.Ships {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+  .card {
+    width: 360px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightcyan;
+    div {
+      text-align: center;
+      p {
+        color: black;
+        &:nth-child(2) {
+          color: red;
+        }
+        &:nth-child(3) {
+          color: green;
+        }
+        &:nth-child(4) {
+          color: blue;
+        }
+        span {
+          color: black;
+        }
+      }
+    }
+    .purText {
+      color: purple !important;
+    }
+    .starshipId {
+      color: lightgreen;
+    }
+    .endSection {
+      border-bottom: 1px dotted black;
+    }
+  }
+}

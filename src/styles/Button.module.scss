@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  justify-content: flex-end;
+  div {
+    transition-duration: 0.4s;
+    width: 10%;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      background-color: lightcoral;
+      color: white;
+    }
+  }
+}
